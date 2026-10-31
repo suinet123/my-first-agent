@@ -6,7 +6,7 @@ def calculate_discount(price, percent):
     if percent < 0 or percent > 100:
         raise ValueError("percent must be between 0 and 100")
     discount = price * percent / 100
-    return price + discount
+    return price - discount
 
 
 if __name__ == "__main__":
